@@ -1,0 +1,30 @@
+{
+  "name": "next_js_pratics",
+  "version": "1.0.0",
+  "description": "This is just a demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --expose-http2 ./server/server-dev.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js "
+  },
+  "keywords": [
+    "next"
+  ],
+  "author": "Rahul",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^7.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@types/next": "^6.1.8",
+    "@types/react": "^16.4.14",
+    "@zeit/next-typescript": "^1.1.1",
+    "hapi": "^17.6.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  }
+}
