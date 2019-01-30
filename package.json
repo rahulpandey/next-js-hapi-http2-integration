@@ -25,6 +25,9 @@
     "@zeit/next-typescript": "^1.1.1",
     "hapi": "^17.6.0",
     "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.0.3"
   }
 }

@@ -1,4 +1,4 @@
-const { parse } = require("url");
+const { parse } = require('url');
 
 const nextHandlerWrapper = app => {
   const handler = app.getRequestHandler();
@@ -8,8 +8,8 @@ const nextHandlerWrapper = app => {
   };
 };
 const defaultHandlerWrapper = app => async ({ raw: { req, res }, url }) => {
-  const { pathname, query } = parse(url, true);
-  return app.renderToHTML(req, res, pathname, query);
+  const { pathname, query } = await parse(url, true);
+  return await app.renderToHTML(req, res, pathname, query);
 };
 
 const pathWrapper = (app, pathName, opts) => async ({ raw, query, params }) => {
@@ -18,7 +18,7 @@ const pathWrapper = (app, pathName, opts) => async ({ raw, query, params }) => {
     raw.res,
     pathName,
     { ...query, ...params },
-    opts
+    opts,
   );
 };
 

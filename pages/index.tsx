@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 export default class extends React.Component {
   render() {
-    return <div style={{ color: "blue" }}>Hello Next.js</div>;
+    return <div style={{ color: 'blue' }}>Hello Next.js</div>;
   }
 }

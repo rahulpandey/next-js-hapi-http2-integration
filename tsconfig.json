@@ -1,6 +1,11 @@
 {
-  "compileOnSave": false,
+  "compileOnSave": true,
+  "exclude": ["node_modules", "coverage"],
   "compilerOptions": {
+    "paths": {
+      "*": ["app/*", "app/redux/*", "static/*"]
+    },
+    "plugins": [{ "name": "typescript-styled-plugin" }],
     "target": "esnext",
     "module": "esnext",
     "jsx": "preserve",
@@ -15,6 +20,9 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "noEmit": true,
-    "lib": ["dom", "es2017"]
+    "lib": ["dom", "es2015", "es2017", "dom.iterable", "scripthost"],
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
   }
 }
