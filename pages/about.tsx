@@ -3,6 +3,6 @@ import React from 'react';
 
 export default () => (
   <Layout>
-    <h1>Hello World!</h1>
+    <h1>About Page</h1>
   </Layout>
 );
